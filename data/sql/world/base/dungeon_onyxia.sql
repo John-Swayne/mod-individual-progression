@@ -669,7 +669,7 @@ INSERT INTO `dungeon_access_template` (`id`, `map_id`, `difficulty`, `min_level`
 
 DELETE FROM `mapdifficulty_dbc` WHERE `MapID` = 249;
 INSERT INTO `mapdifficulty_dbc` (`ID`, `MapID`, `Difficulty`, `RaidDuration`, `MaxPlayers`, `Difficultystring`) VALUES
-(755, 249, 2, 604800, 40, 'RAID_DIFFICULTY_40PLAYER');
+(755, 249, 2, 604800, 20, 'RAID_DIFFICULTY_40PLAYER');
 
 DELETE FROM `dungeonencounter_dbc` WHERE `ID` = 895;
 INSERT INTO `dungeonencounter_dbc` (`ID`, `MapID`, `Difficulty`, `OrderIndex`, `Bit`, `Name_Lang_enUS`, `Name_Lang_enGB`, `Name_Lang_koKR`, `Name_Lang_frFR`, `Name_Lang_deDE`, `Name_Lang_enCN`, `Name_Lang_zhCN`, `Name_Lang_enTW`, `Name_Lang_zhTW`, `Name_Lang_esES`, `Name_Lang_esMX`, `Name_Lang_ruRU`, `Name_Lang_ptPT`, `Name_Lang_ptBR`, `Name_Lang_itIT`, `Name_Lang_Unk`, `Name_Lang_Mask`, `SpellIconID`) VALUES

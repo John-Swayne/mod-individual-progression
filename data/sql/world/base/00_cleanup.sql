@@ -9,21 +9,11 @@ UPDATE `creature_template` SET `unit_class` = 8 WHERE `entry` IN (29273);
 DELETE FROM `creature_addon` WHERE `guid` IN (133917, 133918, 133919, 133920, 133925);
 
 -- battlemasters
-DELETE FROM `game_event_creature` WHERE `guid` IN (207918, 207929, 207951, 208042, 208081, 208107, 208146, 208159, 208185, 208511, 208512); -- alliance
-DELETE FROM `game_event_creature` WHERE `guid` IN (208207, 208240, 208251, 208355, 208368, 208394, 208407, 208509, 208510); -- horde
+DELETE FROM `game_event_creature` WHERE `guid` IN (207918, 207929, 207951, 208042, 208081, 208107, 208146, 208159, 208185); -- alliance
+DELETE FROM `game_event_creature` WHERE `guid` IN (208207, 208240, 208251, 208355, 208368, 208394, 208407); -- horde
 
 -- remove AzerothCore area triggers used by WotLK Scourge Invasion Event
 DELETE FROM `areatrigger_involvedrelation` WHERE `id` IN (4092, 4094, 4095, 4096, 4098, 4099, 4100, 4101, 4103, 4104, 4105, 5151, 5152, 5153, 5154, 5158, 5159, 5160, 5161);
-
--- remove arena season event entries added by AC
-DELETE FROM `creature_addon` WHERE `guid` IN (88155, 88156, 88158, 88159, 88160);
-DELETE FROM `game_event_creature` WHERE `guid` IN 
-(17676, 88155, 88156, 88158, 88159, 88160, 91798, 152022, 152023, 152026, 152027, 152028, 152029, 152030, 152031, 202335, 202336, 
-208486, 208487, 208488, 208489, 208491, 208492, 208494, 208496, 208498, 208499, 208500, 208501, 208503, 208504, 208506, 208508);
-
-DELETE FROM `creature`   WHERE `id`   IN (32405, 32832, 32834);
-DELETE FROM `npc_vendor` WHERE `entry` IN (32405, 32832, 32834);
-DELETE FROM `creature` WHERE `guid` = 88156 AND `id` IN (20278); -- Vixton Pinchwhistle
 
 
 /* the following edits are temporary */
