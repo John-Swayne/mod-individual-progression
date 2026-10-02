@@ -157,19 +157,16 @@ INSERT INTO `quest_request_items` (`ID`, `EmoteOnComplete`, `EmoteOnIncomplete`,
 UPDATE `quest_template` SET `Flags` = 8 WHERE `ID` = 6;
 
 -- Kobold Camp Cleanup
-UPDATE `quest_template` SET `Flags`=8, `LogDescription`='Kill 10 Kobold Vermin, then return to Marshal McBride.', `RequiredNpcOrGoCount1` = 10 WHERE `ID` = 7;
+UPDATE `quest_template` SET `Flags` = 8 WHERE `ID` = 7;
 
 -- Investigate Echo Ridge
-UPDATE `quest_template` SET `Flags` = 8, 
-`LogDescription` = 'Kill 10 Kobold Workers, then report back to Marshal McBride.', 
-`QuestDescription`='$N, my scouts tell me that the kobold infestation is larger than we had thought.  A group of kobold workers has camped near the Echo Ridge Mine to the north.$B$B
-Go to the mine and remove them.  We know there are at least 10.  Kill them, see if there are more, then report back to me.', `RequiredNpcOrGoCount1` = 10 WHERE `ID` = 15;
+UPDATE `quest_template` SET `Flags` = 8 WHERE `ID` = 15;
 
 -- Brotherhood of Thieves
-UPDATE `quest_template` SET `Flags` = 8, `LogDescription` = 'Bring 12 Red Burlap Bandanas to Deputy Willem outside the Northshire Abbey.', `RequiredItemCount1` = 12 WHERE `ID` = 18;
+UPDATE `quest_template` SET `Flags` = 8 WHERE `ID` = 18;
 
 -- Skirmish at Echo Ridge
-UPDATE `quest_template` SET `Flags` = 8, `LogDescription` = 'Kill 12 Kobold Laborers, then return to Marshal McBride at Northshire Abbey.', `RequiredNpcOrGoCount1` = 12 WHERE `ID` = 21;
+UPDATE `quest_template` SET `Flags` = 8 WHERE `ID` = 21;
 
 -- Wolves Across the Border
 UPDATE `quest_template` SET `Flags` = 8, 

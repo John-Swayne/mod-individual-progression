@@ -264,16 +264,13 @@ INSERT INTO `waypoint_data` (`id`, `point`, `position_x`, `position_y`, `positio
 /* Quests */
 
 -- Cutting Teeth
-UPDATE `quest_template` SET `Flags` = 8, 
-`LogDescription` = 'Kill 10 Mottled Boars then return to Gornek at the Den.', `RequiredNpcOrGoCount1` = 10 WHERE `ID` = 788;
+UPDATE `quest_template` SET `Flags` = 8 WHERE `ID` = 788;
 
 -- Sting of the Scorpid
-UPDATE `quest_template` SET `Flags` = 8, 
-`LogDescription` = 'Get 10 Scorpid Worker Tails for Gornek in the Den.', `RequiredItemCount1` = 10 WHERE `ID` = 789;
+UPDATE `quest_template` SET `Flags` = 8 WHERE `ID` = 789;
 
 -- Vile Familiars
-UPDATE `quest_template` SET `Flags` = 8, 
-`LogDescription` = 'Kill 12 Vile Familiars.$b$bReturn to Zureetha Fargaze outside the Den.', `RequiredNpcOrGoCount1` = 12 WHERE `ID` = 792;
+UPDATE `quest_template` SET `Flags` = 8 WHERE `ID` = 792;
 
 UPDATE `quest_template_addon` SET `AllowableClasses` = 1279 WHERE `ID` = 792;
 UPDATE `quest_template_addon` SET `NextQuestID` = 1499 WHERE `ID` = 1485;
@@ -285,8 +282,7 @@ DELETE FROM `creature_questender` WHERE `id` = 5765 AND `quest` = 1485;
 INSERT INTO `creature_questender` (`id`, `quest`) VALUES (5765, 1485);
 
 -- Galgar's Cactus Apple Surprise
-UPDATE `quest_template` SET `Flags` = 8, 
-`LogDescription` = 'Bring Galgar 10 Cactus Apples. You remember him saying that they could be found near cactuses.', `RequiredItemCount1` = 10 WHERE `ID` = 4402;
+UPDATE `quest_template` SET `Flags` = 8 WHERE `ID` = 4402;
 
 UPDATE `quest_template` SET `Flags` = 8 WHERE `ID` = 790; -- Sarkoth
 UPDATE `quest_template` SET `Flags` = 8 WHERE `ID` = 794; -- Burning Blade Medallion
